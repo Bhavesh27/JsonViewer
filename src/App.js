@@ -28,11 +28,12 @@ function App() {
         <h1 className="title">Paste Your Json Here</h1>
         <div className="App-body">
           <textarea
+            className="fixed-width"
             onChange={(e) => setJson(e.target.value)}
             placeholder="Enter your Json Here"
           ></textarea>
           <button className="button" onClick={validate}>Load</button>
-          <div className="output">
+          <div className="fixed-width scroll">
             {showJsonTree && <JsonTree data={jsonObject} />}
           </div>
         </div>

@@ -27,6 +27,9 @@
 .json_tree li.boolean .value {
   color: #8481ff;
 }
+.json_tree li.string .value {
+  color: #fff;
+}
 .json_tree li.null .value {
   color: #c72dff;
 }

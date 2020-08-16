@@ -1,10 +1,9 @@
 textarea {
-  width: 40%;
   height: 300px;
 }
 
-.output {
-  width: 40%;
+.fixed-width {
+  width: 40%
 }
 
 .header {
@@ -17,6 +16,7 @@ textarea {
 
 .button {
   padding: 8px;
+  border-radius: 8px;
   background-color: #ff6f68;
   color: #fff;
   height: 48px;
@@ -42,4 +42,21 @@ textarea {
   justify-content: space-evenly;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.scroll {
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+@media (max-width: 767px){
+  .App-body {
+    flex-direction: column;
+  }
+  .fixed-width {
+    width: 90%;
+  }
+  .button {
+    margin: 16px 0;
+  }
 }
