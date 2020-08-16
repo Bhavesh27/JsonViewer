@@ -26,12 +26,9 @@ export default function ValueNode({ keyName, value, initialExpanded = false }) {
 
     const getChildren = () => {
         const val = value;
-        console.log(val);
-        console.log(getType(val));
 
         if(isExpandableType(val)) {
             return Object.keys(val).map((k) => {
-                console.log(k, val[k])
                 return <ValueNode keyName={k} value={val[k]} />
             });
         }
