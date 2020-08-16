@@ -1,0 +1,46 @@
+.json_tree ul {
+  padding-left: 10px;
+}
+.json_tree li {
+  list-style: none;
+  position: relative;
+  margin: 0;
+  padding: 2px 10px;
+}
+.json_tree li .keyName {
+  margin: 0 10px;
+  font-weight: bold;
+}
+.json_tree li .keyName:after {
+  content: ":";
+}
+.json_tree li .desc {
+  color: #d7d5d8;
+  font-size: 80%;
+}
+.json_tree li .value {
+  border-bottom: 1px dotted #000;
+}
+.json_tree li.number .value {
+  color: #5347ff;
+}
+.json_tree li.boolean .value {
+  color: #8481ff;
+}
+.json_tree li.null .value {
+  color: #c72dff;
+}
+.json_tree li.expandable > ul {
+  display: none;
+}
+.json_tree li.expandable:before {
+  content: "\25B6";
+  position: absolute;
+  left: -3px;
+}
+.json_tree li.expanded > ul {
+  display: block;
+}
+.json_tree li.expanded:before {
+  content: "\25BC";
+}
